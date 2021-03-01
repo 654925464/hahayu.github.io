@@ -1,16 +1,36 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
 
- <head>
+<h1>web2 quize</h1>
 
- 	<meta charset="utf-8">
+<p>1+1=?</p>
 
+<input id="numb">
 
- </head>
- <body>
+<button type="button" onclick="myFunction()">enter</button>
 
- 	<h1>First page in my repo</h1>
+<p id="demo"></p>
 
- </body>
+<script>
+function myFunction() {
+    var x, text;
+
  
+    x = document.getElementById("numb").value;
+
+    
+    if (isNaN(x) || x > 2 || x < 2) {
+        text = "NO!";
+    } else {
+        text = "Yes!";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
 </html>
